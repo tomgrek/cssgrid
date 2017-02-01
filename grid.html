@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+  <title>CSS Grid Demo</title>
+  <style>
+  .container {
+    display: grid;
+    grid-gap: 0.3% 0.3%;
+    grid-template-columns: repeat(12, 8vw);
+    font-family: arial;
+    grid-auto-flow: row dense;
+    justify-content: space-around;
+    width: calc(100vw - 1em);
+    height: calc(100vh - 1em);
+    grid-auto-rows: 8vw;
+  }
+  .b {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: lavender;
+    text-align: center;
+    font-family: arial;
+    font-weight: 700;
+    font-size: 3vw;
+    color: gray;
+    display: inline-block;
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .b1x2 {
+    grid-row: span 2;
+    background-color: lavenderblush;
+  }
+  .b2x2 {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: lightgrey;
+  }
+  .b3x3 {
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+  .b2x3 {
+    grid-row: span 3;
+    grid-column: span 2;
+  }
+  .b3x2 {
+    grid-row: span 2;
+    grid-column: span 3;
+  }
+  .b2x4 {
+    grid-row: span 4;
+    grid-column: span 2;
+  }
+  .b12x1 {
+    grid-column: span 12;
+    font-weight: 900;
+    font-size: 1em;
+    background-color: aliceblue;
+  }
+  @media only screen and (max-width: 1024px) {
+    .b1x1 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .b1x2 {
+      grid-column: span 2;
+      grid-row: span 4;
+    }
+    .b2x2 {
+      grid-column: span 4;
+      grid-row: span 4;
+    }
+    .b2x3 {
+      grid-column: span 4;
+      grid-row: span 6;
+    }
+    .b3x2 {
+      grid-column: span 6;
+      grid-row: span 4;
+    }
+    .b3x3 {
+      grid-column: span 6;
+      grid-row: span 6;
+    }
+    .b2x4 {
+      grid-column: span 4;
+      grid-row: span 8;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="b b12x1"><h1>CSS Grid Demo</h1></div>
+    <div class="b b1x1">1x1</div>
+    <div class="b b1x2">1x2</div>
+    <div class="b b2x2">2x2</div>
+    <div class="b b3x3">3x3</div>
+    <div class="b b1x1">1x1</div>
+    <div class="b b2x3">2x3</div>
+    <div class="b b3x2">3x2</div>
+    <div class="b b2x4">2x4</div>
+    <div class="b b1x2">1x2</div>
+    <div class="b b1x1">1x1</div>
+    <div class="b b2x2">2x2</div>
+    <div class="b b3x3">3x3</div>
+    <div class="b b1x1">1x1</div>
+    <div class="b b2x3">2x3</div>
+  </div>
+</body>
