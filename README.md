@@ -1,6 +1,6 @@
 # Pure CSS Masonry-like grid
 
-A responsive Masonry-like grid layout in pure CSS. For more info, see [my blog post](https://tomgrek.com/css-grid).
+A responsive Masonry-like grid layout in pure CSS. For more info, see [my blog post](https://tomgrek.com/post/css-grid), and see the demo in action [here](https://tomgrek.com/cssgriddemo/grid.html).
 
 ![Screenshot](screenshot.png)
 
